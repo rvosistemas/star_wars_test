@@ -50,10 +50,9 @@ The service should be available in the URL: `127.0.0.1:8000/graphql`.
 
 ### Test endpoints in graphql
 
-```
 createPlanet
-```
 
+```
 mutation {
 createPlanetMutation(input: {
 name: "tierra",
@@ -73,18 +72,18 @@ rotationPeriod
 orbitalPeriod
 diameter
 climate
-gravity  
+gravity
  terrain
 surfaceWater
 population
 }
 }
 }
-
 ```
+
 createPeople
-```
 
+```
 mutation {
 createPeopleMutation(input: {
 name: "Richard",
@@ -105,18 +104,18 @@ height
 hairColor
 skinColor
 eyeColor
-mass  
+mass
  gender
 birthYear
 id
 }
 }
 }
-
 ```
+
 updatePeople
-```
 
+```
 mutation {
 updatePeopleMutation(input: {
 id: 94,
@@ -138,25 +137,20 @@ height
 hairColor
 skinColor
 eyeColor
-mass  
+mass
  gender
 birthYear
 id
 }
 }
 }
+```
 
 ### Runing the tests with Pytest
 
-```
-
-Run test with pytest
+Run test with pytest in console
 
 ```
-
-in console run --> export DJANGO_SETTINGS_MODULE=swapi.settings
-then --> pytest --cov-report term --cov=app app/test/
-
-```
-
+export DJANGO_SETTINGS_MODULE=swapi.settings
+pytest --cov-report term --cov=app app/test/
 ```
